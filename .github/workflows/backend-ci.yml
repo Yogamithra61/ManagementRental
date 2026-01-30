@@ -25,3 +25,15 @@ jobs:
 
       - name: Build backend with Gradle
         run: ./gradlew build -x test
+
+  - name: SonarCloud Scan
+  uses: SonarSource/sonarcloud-github-action@v2
+  env:
+    SONAR_TOKEN:Yoga_mithra
+  with:
+    projectKey: yogamithra61
+    organization: yogamithra61
+
+
+
+
